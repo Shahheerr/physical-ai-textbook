@@ -1,6 +1,12 @@
-# Website
+# Physical AI & Humanoid Robotics: Embodied Intelligence
+
+A comprehensive textbook on Physical AI and Humanoid Robotics.
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Website
+
+The live website is available at: [https://Shahheerr.github.io/physical-ai-textbook/](https://Shahheerr.github.io/physical-ai-textbook/)
 
 ## Installation
 
@@ -26,16 +32,12 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
-Using SSH:
+This project is configured to be deployed to GitHub Pages.
 
 ```bash
-USE_SSH=true yarn deploy
+GIT_USER=Shahheerr yarn deploy
 ```
 
-Not using SSH:
+## Contributing
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Contributions are welcome! Please feel free to submit a Pull Request.

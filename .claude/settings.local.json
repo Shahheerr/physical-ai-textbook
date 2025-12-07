@@ -18,7 +18,12 @@
       "mcp__github__get_me",
       "mcp__github__create_repository",
       "mcp__github__search_repositories",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"Fix GitHub Pages deployment configuration\n- Update docusaurus.config.ts with correct username and trailingSlash setting\n- Add permissions to GitHub Actions workflow\n- Upgrade deployment action to v4\")",
+      "mcp__github__push_files",
+      "mcp__github__get_file_contents",
+      "Bash(ls -la specs/*/tasks.md)",
+      "Bash(cat package.json)"
     ],
     "deny": [],
     "ask": []

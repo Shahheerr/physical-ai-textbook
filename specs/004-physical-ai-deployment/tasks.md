@@ -27,9 +27,9 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 **Purpose**: Prepare deployment environment and tools
 
-- [ ] T001 Set up local development environment for deployment validation
-- [ ] T002 [P] Install Docusaurus CLI tools for build validation
-- [ ] T003 Verify repository is properly configured for GitHub integration
+- [X] T001 Set up local development environment for deployment validation
+- [X] T002 [P] Install Docusaurus CLI tools for build validation
+- [X] T003 Verify repository is properly configured for GitHub integration
 
 ---
 
@@ -39,9 +39,9 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 **⚠️ CRITICAL**: No deployment work can begin until this phase is complete
 
-- [ ] T004 Obtain GitHub username and repository name from user for configuration
-- [ ] T005 [P] Create .github/workflows directory structure
-- [ ] T006 Document current docusaurus.config.ts values for backup
+- [X] T004 Obtain GitHub username and repository name from user for configuration
+- [X] T005 [P] Create .github/workflows directory structure
+- [X] T006 Document current docusaurus.config.ts values for backup
 
 **Checkpoint**: Foundation ready - deployment work can now begin in parallel
 
@@ -55,13 +55,13 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 ### Implementation for User Story 1
 
-- [ ] T007 [US1] Update url field in docusaurus.config.ts to 'https://[username].github.io'
-- [ ] T008 [US1] Update baseUrl field in docusaurus.config.ts to '/[repo-name]/'
-- [ ] T009 [US1] Update organizationName field in docusaurus.config.ts to '[username]'
-- [ ] T010 [US1] Update projectName field in docusaurus.config.ts to '[repo-name]'
-- [ ] T011 [US1] Verify deploymentBranch is set to 'gh-pages' in deployment configuration
-- [ ] T012 [US1] Test that build command reflects correct GitHub Pages URL structure
-- [ ] T013 [US1] Validate all GitHub Pages configuration values are properly set
+- [X] T007 [US1] Update url field in docusaurus.config.ts to 'https://[username].github.io'
+- [X] T008 [US1] Update baseUrl field in docusaurus.config.ts to '/[repo-name]/'
+- [X] T009 [US1] Update organizationName field in docusaurus.config.ts to '[username]'
+- [X] T010 [US1] Update projectName field in docusaurus.config.ts to '[repo-name]'
+- [X] T011 [US1] Verify deploymentBranch is set to 'gh-pages' in deployment configuration
+- [X] T012 [US1] Test that build command reflects correct GitHub Pages URL structure
+- [X] T013 [US1] Validate all GitHub Pages configuration values are properly set
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -75,13 +75,13 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 ### Implementation for User Story 2
 
-- [ ] T014 [US2] Run 'npm run build' command to validate production build
-- [ ] T015 [US2] Check build output for any errors or warnings
-- [ ] T016 [US2] Verify build completes successfully without errors
-- [ ] T017 [US2] Check built site for broken links using local server
-- [ ] T018 [US2] Verify all content renders correctly in built version
-- [ ] T019 [US2] Document any issues found during build validation
-- [ ] T020 [US2] Fix any issues identified during build validation
+- [X] T014 [US2] Run 'npm run build' command to validate production build
+- [X] T015 [US2] Check build output for any errors or warnings
+- [X] T016 [US2] Verify build completes successfully without errors
+- [X] T017 [US2] Check built site for broken links using local server
+- [X] T018 [US2] Verify all content renders correctly in built version
+- [X] T019 [US2] Document any issues found during build validation
+- [X] T020 [US2] Fix any issues identified during build validation
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -95,16 +95,16 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 ### Implementation for User Story 3
 
-- [ ] T021 [US3] Create GitHub Actions workflow file at .github/workflows/deploy.yml
-- [ ] T022 [US3] Configure workflow to trigger on pushes to main branch
-- [ ] T023 [US3] [P] Add Node.js setup step using actions/setup-node@v4
-- [ ] T024 [US3] [P] Add dependency installation step using 'npm ci'
-- [ ] T025 [US3] Add Docusaurus build command step 'npm run build'
-- [ ] T026 [US3] Configure deployment to gh-pages branch using peaceiris/actions-gh-pages
-- [ ] T027 [US3] [P] Add proper authentication with GITHUB_TOKEN
-- [ ] T028 [US3] [P] Set publish directory to ./build
-- [ ] T029 [US3] [P] Set publish branch to gh-pages
-- [ ] T030 [US3] Verify workflow includes all required steps and configuration
+- [X] T021 [US3] Create GitHub Actions workflow file at .github/workflows/deploy.yml
+- [X] T022 [US3] Configure workflow to trigger on pushes to main branch
+- [X] T023 [US3] [P] Add Node.js setup step using actions/setup-node@v4
+- [X] T024 [US3] [P] Add dependency installation step using 'npm ci'
+- [X] T025 [US3] Add Docusaurus build command step 'npm run build'
+- [X] T026 [US3] Configure deployment to gh-pages branch using peaceiris/actions-gh-pages
+- [X] T027 [US3] [P] Add proper authentication with GITHUB_TOKEN
+- [X] T028 [US3] [P] Set publish directory to ./build
+- [X] T029 [US3] [P] Set publish branch to gh-pages
+- [X] T030 [US3] Verify workflow includes all required steps and configuration
 
 **Checkpoint**: At this point, User Stories 1, 2 AND 3 should all work independently
 
@@ -118,16 +118,16 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 ### Implementation for User Story 4
 
-- [ ] T031 [US4] Commit all changes to the repository
-- [ ] T032 [US4] Push changes to GitHub to trigger initial deployment
-- [ ] T033 [US4] Monitor GitHub Actions workflow status in repository
-- [ ] T034 [US4] Verify deployment workflow runs successfully
-- [ ] T035 [US4] Access published site at https://[username].github.io/[repo-name]/
-- [ ] T036 [US4] Test all navigation and content on published site
-- [ ] T037 [US4] Verify all pages load correctly on GitHub Pages
-- [ ] T038 [US4] Document the final Public GitHub Repo Link
-- [ ] T039 [US4] Document the final Published Book Link
-- [ ] T040 [US4] Verify all functionality works as expected on deployed site
+- [X] T031 [US4] Commit all changes to the repository
+- [X] T032 [US4] Push changes to GitHub to trigger initial deployment
+- [X] T033 [US4] Monitor GitHub Actions workflow status in repository
+- [X] T034 [US4] Verify deployment workflow runs successfully
+- [X] T035 [US4] Access published site at https://[username].github.io/[repo-name]/
+- [X] T036 [US4] Test all navigation and content on published site
+- [X] T037 [US4] Verify all pages load correctly on GitHub Pages
+- [X] T038 [US4] Document the final Public GitHub Repo Link
+- [X] T039 [US4] Document the final Published Book Link
+- [X] T040 [US4] Verify all functionality works as expected on deployed site
 
 **Checkpoint**: At this point, all user stories should be independently functional
 
@@ -137,14 +137,14 @@ description: "Task list for Deploy Physical AI & Humanoid Robotics Textbook to G
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T041 [P] Update README.md with deployment instructions
-- [ ] T042 [P] Add deployment status badge to README.md
-- [ ] T043 Update documentation with published site URL
-- [ ] T044 Verify all links work correctly in deployed version
-- [ ] T045 Optimize site performance for GitHub Pages hosting
-- [ ] T046 Add error handling for deployment failures
-- [ ] T047 Update quickstart.md with deployment-specific instructions
-- [ ] T048 Verify site adheres to Physical AI Constitution principles in deployed form
+- [X] T041 [P] Update README.md with deployment instructions
+- [X] T042 [P] Add deployment status badge to README.md
+- [X] T043 Update documentation with published site URL
+- [X] T044 Verify all links work correctly in deployed version
+- [X] T045 Optimize site performance for GitHub Pages hosting
+- [X] T046 Add error handling for deployment failures
+- [X] T047 Update quickstart.md with deployment-specific instructions
+- [X] T048 Verify site adheres to Physical AI Constitution principles in deployed form
 
 ---
 
