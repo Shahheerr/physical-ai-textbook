@@ -1,0 +1,83 @@
+<!-- Physical AI Concepts Diagram -->
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <title>Physical AI Concepts - From Digital AI to Embodied Intelligence</title>
+  <desc>Diagram showing the transition from Digital AI to Physical AI with embodied intelligence</desc>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" stroke="#ccc" stroke-width="2" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50">Physical AI: From Digital to Embodied Intelligence</text>
+
+  <!-- Digital AI Block -->
+  <g transform="translate(100, 100)">
+    <rect width="200" height="120" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Digital AI</text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Processes abstract</text>
+    <text x="100" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="white">data in digital realm</text>
+    <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="white">No physical interaction</text>
+    <!-- Abstract data icons -->
+    <circle cx="50" cy="100" r="8" fill="white" stroke="#2980b9" stroke-width="1"/>
+    <circle cx="70" cy="100" r="8" fill="white" stroke="#2980b9" stroke-width="1"/>
+    <circle cx="90" cy="100" r="8" fill="white" stroke="#2980b9" stroke-width="1"/>
+  </g>
+
+  <!-- Transition Arrow -->
+  <defs>
+    <marker id="transitionArrow" markerWidth="15" markerHeight="10"
+      refX="15" refY="5" orient="auto">
+      <polygon points="0 0, 15 5, 0 10" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  <line x1="320" y1="160" x2="480" y2="160" stroke="#e74c3c" stroke-width="4"
+    marker-end="url(#transitionArrow)"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#c0392b" font-weight="bold">Transition</text>
+
+  <!-- Physical AI Block -->
+  <g transform="translate(500, 100)">
+    <rect width="200" height="120" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Physical AI</text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Interacts with</text>
+    <text x="100" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="white">physical world</text>
+    <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Understands physics</text>
+    <!-- Robot icon -->
+    <rect x="70" y="60" width="60" height="30" fill="white" stroke="#27ae60" stroke-width="1" rx="5"/>
+    <circle cx="85" cy="50" r="10" fill="white" stroke="#27ae60" stroke-width="1"/>
+    <line x1="75" y1="60" x2="60" y2="80" stroke="white" stroke-width="3"/>
+    <line x1="125" y1="60" x2="140" y2="80" stroke="white" stroke-width="3"/>
+  </g>
+
+  <!-- Embodied Intelligence Section -->
+  <g transform="translate(200, 280)">
+    <rect width="400" height="160" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="200" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Embodied Intelligence</text>
+
+    <!-- Concept boxes -->
+    <g transform="translate(50, 50)">
+      <rect width="100" height="70" rx="5" fill="white" stroke="#8e44ad" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" font-family="Arial" font-size="11" fill="#8e44ad">Agent</text>
+      <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10" fill="#8e44ad">Environments</text>
+      <text x="50" y="60" text-anchor="middle" font-family="Arial" font-size="9" fill="#8e44ad">Interaction</text>
+    </g>
+
+    <g transform="translate(160, 50)">
+      <rect width="100" height="70" rx="5" fill="white" stroke="#8e44ad" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" font-family="Arial" font-size="11" fill="#8e44ad">Physical</text>
+      <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10" fill="#8e44ad">Laws</text>
+      <text x="50" y="60" text-anchor="middle" font-family="Arial" font-size="9" fill="#8e44ad">Gravity, Force</text>
+    </g>
+
+    <g transform="translate(270, 50)">
+      <rect width="100" height="70" rx="5" fill="white" stroke="#8e44ad" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" font-family="Arial" font-size="11" fill="#8e44ad">Sensors</text>
+      <text x="50" y="40" text-anchor="middle" font-family="Arial" font-size="10" fill="#8e44ad">&amp; Actuators</text>
+      <text x="50" y="60" text-anchor="middle" font-family="Arial" font-size="9" fill="#8e44ad">LIDAR, Cameras</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(20, 450)">
+    <rect width="180" height="30" fill="white" stroke="#ccc" stroke-width="1"/>
+    <text x="90" y="20" text-anchor="middle" font-family="Arial" font-size="10" fill="#2c3e50">Physical AI bridges digital computation and physical reality</text>
+  </g>
+</svg>

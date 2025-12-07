@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Physical AI & Humanoid Robotics: Embodied Intelligence',
+  tagline: 'A comprehensive textbook on Physical AI and Humanoid Robotics',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://your-username.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/physical-ai-textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'your-username', // Usually your GitHub org/user name.
+  projectName: 'physical-ai-textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/your-username/physical-ai-textbook/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/your-username/physical-ai-textbook/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -74,22 +74,30 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    // Performance optimization settings
+    metadata: [
+      {name: 'description', content: 'Physical AI & Humanoid Robotics: Embodied Intelligence textbook - Comprehensive guide to embodied intelligence, ROS 2, robot simulation, and humanoid robotics'},
+      {name: 'keywords', content: 'Physical AI, Humanoid Robotics, Embodied Intelligence, ROS 2, Robot Simulation, Gazebo, Unity, rclpy, URDF, Sensor Systems, LIDAR, IMU, Robot Operating System, Digital AI, Rigid Body Dynamics, VSLAM, AI Robot Brain, Vision Language Action'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+      {name: 'author', content: 'Physical AI & Humanoid Robotics Textbook'},
+      {name: 'robots', content: 'index, follow'},
+    ],
     navbar: {
-      title: 'My Site',
+      title: 'Physical AI & Humanoid Robotics',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Physical AI & Humanoid Robotics Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'textbookSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Textbook',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/your-username/physical-ai-textbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -138,7 +146,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

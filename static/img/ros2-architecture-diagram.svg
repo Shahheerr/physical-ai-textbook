@@ -1,0 +1,69 @@
+<!-- ROS 2 Architecture Diagram - Node/Topic/Service Communication Model -->
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <title>ROS 2 Architecture - Node/Topic/Service Communication Model</title>
+  <desc>Diagram showing the communication patterns in ROS 2: Nodes, Topics (pub/sub), and Services (req/resp)</desc>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" stroke="#ccc" stroke-width="2" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50">ROS 2 Communication Architecture</text>
+
+  <!-- Publisher Node -->
+  <g transform="translate(150, 100)">
+    <rect width="150" height="80" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Publisher Node</text>
+    <text x="75" y="65" text-anchor="middle" font-family="Arial" font-size="12" fill="white">/sensor_data</text>
+  </g>
+
+  <!-- Subscriber Node -->
+  <g transform="translate(150, 300)">
+    <rect width="150" height="80" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Subscriber Node</text>
+    <text x="75" y="65" text-anchor="middle" font-family="Arial" font-size="12" fill="white">/sensor_data</text>
+  </g>
+
+  <!-- Topic Arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  <line x1="225" y1="180" x2="225" y2="300" stroke="#e74c3c" stroke-width="3" stroke-dasharray="5,5"
+    marker-end="url(#arrowhead)"/>
+  <text x="240" y="240" font-family="Arial" font-size="12" fill="#c0392b">Topic: /sensor_data</text>
+
+  <!-- Service Client -->
+  <g transform="translate(500, 100)">
+    <rect width="150" height="80" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Service Client</text>
+    <text x="75" y="65" text-anchor="middle" font-family="Arial" font-size="12" fill="white">/calculate</text>
+  </g>
+
+  <!-- Service Server -->
+  <g transform="translate(500, 300)">
+    <rect width="150" height="80" rx="10" fill="#f39c12" stroke="#d35400" stroke-width="2"/>
+    <text x="75" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Service Server</text>
+    <text x="75" y="65" text-anchor="middle" font-family="Arial" font-size="12" fill="white">/calculate</text>
+  </g>
+
+  <!-- Service Request -->
+  <line x1="575" y1="180" x2="575" y2="300" stroke="#3498db" stroke-width="3"
+    marker-end="url(#arrowhead)"/>
+  <text x="590" y="220" font-family="Arial" font-size="12" fill="#2980b9">Request</text>
+
+  <!-- Service Response -->
+  <line x1="600" y1="300" x2="600" y2="180" stroke="#2ecc71" stroke-width="3"
+    marker-end="url(#arrowhead)"/>
+  <text x="615" y="250" font-family="Arial" font-size="12" fill="#27ae60">Response</text>
+
+  <!-- Legend -->
+  <g transform="translate(20, 420)">
+    <rect width="200" height="60" fill="white" stroke="#ccc" stroke-width="1"/>
+    <circle cx="15" cy="20" r="6" fill="#3498db"/>
+    <text x="30" y="25" font-family="Arial" font-size="12" fill="#2c3e50">Publisher</text>
+    <circle cx="15" cy="40" r="6" fill="#2ecc71"/>
+    <text x="30" y="45" font-family="Arial" font-size="12" fill="#2c3e50">Subscriber</text>
+  </g>
+</svg>

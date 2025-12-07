@@ -1,0 +1,13 @@
+<!-- Placeholder SVG for ROS 2 communication patterns diagram -->
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <title>ROS 2 Communication Patterns</title>
+  <desc>Diagram showing Nodes, Topics, Services, and Actions communication in ROS 2</desc>
+  <!-- This is a placeholder - actual diagram would be created separately -->
+  <rect x="10" y="10" width="780" height="380" fill="#f8f9fa" stroke="#ccc" stroke-width="2"/>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial" font-size="16" fill="#666">
+    ROS 2 Communication Patterns Diagram
+  </text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#888">
+    Nodes, Topics, Services, and Actions communication model
+  </text>
+</svg>

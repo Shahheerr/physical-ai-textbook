@@ -1,55 +1,50 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: N/A -> 1.0.0
+Added sections: All principles specific to Physical AI & Humanoid Robotics textbook
+Modified principles: N/A (new constitution)
+Templates requiring updates: N/A
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics: Embodied Intelligence Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Docusaurus-First Documentation
+Every module of the Physical AI & Humanoid Robotics textbook starts as structured Docusaurus documentation; Documentation must be self-contained, well-organized, and follow the defined navigation structure; Clear module progression required - each module builds upon previous knowledge with defined learning outcomes.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Modular Learning Architecture
+Each textbook module (Introduction to Physical AI, ROS 2 Fundamentals, Robot Simulation, etc.) must be independently accessible while maintaining coherent progression; Content follows the defined week-based structure (Weeks 1-2, 3-5, 6-7) with clear learning objectives; Each module contains focused content, key topics, and practical applications relevant to Physical AI and Humanoid Robotics.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Content-First Development (NON-NEGOTIABLE)
+Content creation precedes any advanced styling or functionality; All content written in Markdown format following Docusaurus standards; Modules must contain comprehensive coverage of specified topics before additional features are implemented; Each page must have clear learning objectives and key takeaways.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Simulation-Integrated Learning
+All theoretical concepts must connect to practical simulation examples; ROS 2 fundamentals include hands-on examples with rclpy and Gazebo/Unity simulation; Content emphasizes the relationship between theoretical Physical AI concepts and practical implementation through simulation environments.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Physical AI Foundation Focus
+Content must emphasize the transition from Digital AI to robots that understand physical laws; Humanoid Robotics Landscape and essential Sensor Systems (LIDAR, cameras, IMUs, force/torque sensors) are foundational elements; All modules reinforce the core concept of embodied intelligence throughout the curriculum.
 
-### [PRINCIPLE_6_NAME]
+### VI. GitHub Pages Deployment Standard
+All documentation must be optimized for GitHub Pages deployment; Content structure follows Docusaurus best practices for static site generation; Navigation and search functionality must work seamlessly in the deployed environment.
 
+## Additional Constraints
 
-[PRINCIPLE__DESCRIPTION]
+Technology Stack: Docusaurus v3+, React, Node.js, GitHub Pages
+Content Format: Markdown with Docusaurus-specific extensions
+Deployment: Automated via GitHub Actions to GitHub Pages
+Branding: Book title "Physical AI & Humanoid Robotics: Embodied Intelligence" must be consistently displayed
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Content Creation: Write comprehensive module content following the specified structure
+Review Process: Verify technical accuracy of ROS 2, Gazebo, and Unity content
+Quality Gates: All modules must include examples of the key concepts in practice
+Module Structure: Introduction → Key Topics → Practical Applications → Summary
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development decisions for the Physical AI & Humanoid Robotics textbook project; All content must align with the defined module structure and learning objectives; Changes to core module topics require explicit approval; All PRs must verify compliance with Docusaurus standards and module progression requirements.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
+aap
