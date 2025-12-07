@@ -22,7 +22,7 @@ This module covers the fundamentals of ROS 2 (Robot Operating System 2), which s
 
 ## Key Architecture Visualization
 
-For a comprehensive understanding of ROS 2 architecture, refer to the detailed diagram in the [ROS 2 Fundamentals](./ros2-fundamentals) section which illustrates how Nodes, Topics, Services, and Actions interact.
+For a comprehensive understanding of ROS 2 architecture, refer to the detailed diagram in the [ROS 2 Fundamentals](/docs/module-1/ros2-fundamentals) section which illustrates how Nodes, Topics, Services, and Actions interact.
 
 ## Hardware Requirements
 
@@ -37,9 +37,9 @@ This module includes technically demanding topics that may require specialized h
 
 ## Related Topics
 
-- [Introduction to Physical AI](../docs/intro) - Foundation concepts of embodied intelligence
-- [Module 2: Robot Simulation](../docs/module-2/index) - Physics simulation and digital twins
-- [ROS 2 Fundamentals](./ros2-fundamentals) - Core concepts and practical examples
+- [Introduction to Physical AI](/docs/intro) - Foundation concepts of embodied intelligence
+- [Module 2: Robot Simulation](/docs/module-2) - Physics simulation and digital twins
+- [ROS 2 Fundamentals](/docs/module-1/ros2-fundamentals) - Core concepts and practical examples
 
 ## Key Takeaways
 

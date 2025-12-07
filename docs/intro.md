@@ -115,8 +115,8 @@ Nature provides excellent examples of sensor systems that inspired robotic senso
 
 ## Related Topics
 
-- [Module 1: ROS 2 Fundamentals](../docs/module-1/ros2-fundamentals) - Learn about the robotic nervous system
-- [Module 2: Robot Simulation](../docs/module-2/robot-simulation) - Explore physics simulation and digital twins
+- [Module 1: ROS 2 Fundamentals](/docs/module-1/ros2-fundamentals) - Learn about the robotic nervous system
+- [Module 2: Robot Simulation](/docs/module-2/robot-simulation) - Explore physics simulation and digital twins
 
 ## Next Steps
 

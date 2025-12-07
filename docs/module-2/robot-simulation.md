@@ -178,9 +178,9 @@ This module includes technically demanding topics that may require specialized h
 
 ## Related Topics
 
-- [Module 2 Overview](./index) - Introduction to robot simulation
-- [Module 1: ROS 2 Fundamentals](../docs/module-1/ros2-fundamentals) - Integration with ROS 2 systems
-- [Introduction to Physical AI](../docs/intro) - Foundation concepts of embodied intelligence
+- [Module 2 Overview](/docs/module-2) - Introduction to robot simulation
+- [Module 1: ROS 2 Fundamentals](/docs/module-1/ros2-fundamentals) - Integration with ROS 2 systems
+- [Introduction to Physical AI](/docs/intro) - Foundation concepts of embodied intelligence
 
 ## Next Steps
 

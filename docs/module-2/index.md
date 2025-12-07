@@ -35,9 +35,9 @@ This module includes technically demanding topics that may require specialized h
 
 ## Related Topics
 
-- [Module 1: ROS 2 Fundamentals](../docs/module-1/index) - Robotic nervous system concepts
-- [Robot Simulation](./robot-simulation) - Physics simulation and environment building
-- [Introduction to Physical AI](../docs/intro) - Foundation concepts of embodied intelligence
+- [Module 1: ROS 2 Fundamentals](/docs/module-1) - Robotic nervous system concepts
+- [Robot Simulation](/docs/module-2/robot-simulation) - Physics simulation and environment building
+- [Introduction to Physical AI](/docs/intro) - Foundation concepts of embodied intelligence
 
 ## Key Takeaways
 

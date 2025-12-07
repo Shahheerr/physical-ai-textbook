@@ -273,9 +273,9 @@ After studying this module, consider these questions to reinforce your understan
 
 ## Related Topics
 
-- [Module 1 Overview](./index) - Introduction to ROS 2 fundamentals
-- [Module 2: Robot Simulation](../docs/module-2/robot-simulation) - Simulation environments for ROS 2
-- [Introduction to Physical AI](../docs/intro) - Foundation concepts
+- [Module 1 Overview](/docs/module-1) - Introduction to ROS 2 fundamentals
+- [Module 2: Robot Simulation](/docs/module-2/robot-simulation) - Simulation environments for ROS 2
+- [Introduction to Physical AI](/docs/intro) - Foundation concepts
 
 ## Next Steps
 
