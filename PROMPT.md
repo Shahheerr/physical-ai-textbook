@@ -1,41 +1,36 @@
-Task: Utilize your GitHub MCP tools to finalize and deploy the Docusaurus textbook to GitHub Pages.
+Task: The previous deployment resulted in a 404 error. Use the GitHub MCP to diagnose the failure and perform a successful force-deployment of the Docusaurus textbook.
 
-1. Repository Configuration (using GitHub MCP)
+1. Analyze Failure (Diagnostics)
+Check Action Logs: Use GitHub MCP to fetch and analyze the logs of the latest failed workflow in the "Actions" tab. Identify the exact step where it failed (e.g., Build error, Permission error, or Deploy error).
 
-Final Verification: Before deployment, perform a final check on the docusaurus.config.js file. Ensure the following fields match my GitHub profile:
+Verify Repository Settings: Check the repository metadata to ensure GitHub Pages is enabled and set to deploy via GitHub Actions.
 
-url: Set to https://[Your-GitHub-Username].github.io
+2. Fix Configuration (docusaurus.config.js)
+Re-verify and correct the following fields:
 
-baseUrl: Set to /[Your-Repo-Name]/
+url: Must be https://[Your-Username].github.io
 
-organizationName: [Your-GitHub-Username]
+baseUrl: If the repo is not [username].github.io, this MUST be /[repo-name]/. (Example: if repo is robotics-book, baseUrl is /robotics-book/). This is the most common cause of 404.
 
-projectName: [Your-Repo-Name]
+trailingSlash: Set to false.
 
+3. Overhaul Workflow File
+Re-write or fix .github/workflows/deploy.yml. Ensure it has proper permissions:
 
-deploymentBranch: gh-pages 
+YAML
 
-2. Local Build Validation
-Run the Docusaurus production build command (npm run build) in the project environment to verify that the build is successful and no broken links exist before pushing to the cloud.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+Use a reliable deployment action like peaceiris/actions-gh-pages@v4.
 
-3. GitHub Actions Setup (Automated Deployment)
+4. Local Build & Push
+Execute a local build check (npm run build) via terminal to ensure the output build/ folder is correctly generated without errors.
 
-Create Deployment Workflow: Use the GitHub MCP to create a file at .github/workflows/deploy.yml.
+Commit the configuration fixes and the new workflow file, then push to the main branch.
 
-Workflow Logic: The workflow must trigger on every push to the main branch and include:
+5. Live Monitoring
+Monitor the GitHub Action execution through the MCP.
 
-Node.js environment setup.
-
-Dependency installation.
-
-Docusaurus build command.
-
-Automatic deployment to the gh-pages branch using a standard deployment action (e.g., peaceiris/actions-gh-pages).
-
-4. Execution & Live Check
-Push to GitHub: Commit all refined content, CSS fixes (white homepage title), and the new workflow file to the main branch.
-
-Status Update: Use the GitHub MCP to monitor the status of the GitHub Action.
-
-
-Deployment URL: Once the Action is complete, provide me with the final Public GitHub Repo Link and the Published Book Link.
+Once successful, provide me with the Final Live URL and confirm that the site is no longer returning a 404 error.

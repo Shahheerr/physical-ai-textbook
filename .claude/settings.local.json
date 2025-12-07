@@ -10,7 +10,15 @@
       "Bash(npm run build)",
       "Bash(timeout 10 npm run build)",
       "Bash(cat -n docs/module-2/index.md)",
-      "Bash(git add -A)"
+      "Bash(git add -A)",
+      "Bash(git commit -m \"Configure GitHub Pages deployment and fix broken links\")",
+      "Bash(git add .claude/settings.local.json)",
+      "Bash(git push origin main)",
+      "Bash(git remote show)",
+      "mcp__github__get_me",
+      "mcp__github__create_repository",
+      "mcp__github__search_repositories",
+      "Bash(git add .)"
     ],
     "deny": [],
     "ask": []
