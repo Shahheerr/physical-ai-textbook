@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://Shahheerr.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-textbook/',
+  baseUrl: '/',
   trailingSlash: false,
 
   // GitHub pages deployment config.
@@ -77,11 +77,11 @@ const config: Config = {
     },
     // Performance optimization settings
     metadata: [
-      {name: 'description', content: 'Physical AI & Humanoid Robotics: Embodied Intelligence textbook - Comprehensive guide to embodied intelligence, ROS 2, robot simulation, and humanoid robotics'},
-      {name: 'keywords', content: 'Physical AI, Humanoid Robotics, Embodied Intelligence, ROS 2, Robot Simulation, Gazebo, Unity, rclpy, URDF, Sensor Systems, LIDAR, IMU, Robot Operating System, Digital AI, Rigid Body Dynamics, VSLAM, AI Robot Brain, Vision Language Action'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
-      {name: 'author', content: 'Physical AI & Humanoid Robotics Textbook'},
-      {name: 'robots', content: 'index, follow'},
+      { name: 'description', content: 'Physical AI & Humanoid Robotics: Embodied Intelligence textbook - Comprehensive guide to embodied intelligence, ROS 2, robot simulation, and humanoid robotics' },
+      { name: 'keywords', content: 'Physical AI, Humanoid Robotics, Embodied Intelligence, ROS 2, Robot Simulation, Gazebo, Unity, rclpy, URDF, Sensor Systems, LIDAR, IMU, Robot Operating System, Digital AI, Rigid Body Dynamics, VSLAM, AI Robot Brain, Vision Language Action' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { name: 'author', content: 'Physical AI & Humanoid Robotics Textbook' },
+      { name: 'robots', content: 'index, follow' },
     ],
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
@@ -96,7 +96,7 @@ const config: Config = {
           position: 'left',
           label: 'Textbook',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/Shahheerr/physical-ai-textbook',
           label: 'GitHub',
