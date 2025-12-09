@@ -6,97 +6,329 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1a73e8; /* Professional blue for tech content */
-  --ifm-color-primary-dark: #1865cc;
-  --ifm-color-primary-darker: #1658b9;
-  --ifm-color-primary-darkest: #124897;
-  --ifm-color-primary-light: #3b8cff;
-  --ifm-color-primary-lighter: #5c9fff;
-  --ifm-color-primary-lightest: #7fb5ff;
+  --ifm-color-primary: #2563eb; /* Professional lighter blue (Tailwind blue-600 equivalent) */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(26, 115, 232, 0.1);
-  --ifm-color-hero-background: #f8f9fa;
-  --ifm-color-text: #202124;
-  --ifm-color-content-secondary: #5f6368;
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
+  --ifm-color-hero-background: #f8fafc; /* Slate-50 */
+  
+  /* Text and Content */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-line-height-base: 1.7; /* Improved readability */
+  --ifm-heading-margin-top: 2em;
+  --ifm-heading-margin-bottom: 1em;
+  
+  /* AI Panel Variables - Light Mode */
+  --ai-panel-bg: rgba(255, 255, 255, 0.9);
+  --ai-panel-border: rgba(0, 0, 0, 0.1);
+  --ai-header-bg: rgba(255, 255, 255, 0.8);
+  --ai-text-color: #1e293b; /* Slate-800 */
+  --ai-subtext-color: #64748b; /* Slate-500 */
+  --ai-context-bg: rgba(37, 99, 235, 0.05); /* slightly blue */
+  --ai-context-border: #2563eb;
+  --ai-input-bg: #ffffff;
+  --ai-input-border: #e2e8f0;
+  --ai-input-text: #0f172a;
+  --ai-input-placeholder: #94a3b8;
+  --ai-button-bg: #2563eb;
+  --ai-button-text: #ffffff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #4285f4; /* Lighter blue for dark mode */
-  --ifm-color-primary-dark: #3367d6;
-  --ifm-color-primary-darker: #2d5db1;
-  --ifm-color-primary-darkest: #254d8e;
-  --ifm-color-primary-light: #5a95f5;
-  --ifm-color-primary-lighter: #72a5f7;
-  --ifm-color-primary-lightest: #8ab5f8;
-  --docusaurus-highlighted-code-line-bg: rgba(66, 133, 244, 0.3);
-  --ifm-color-hero-background: #1e1e1e;
-  --ifm-color-text: #e8eaed;
-  --ifm-color-content-secondary: #9aa0a6;
+  --ifm-color-primary: #60a5fa; /* Blue-400 */
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.2);
+  --ifm-color-hero-background: #0f172a; /* Slate-900 */
+  
+  /* AI Panel Variables - Dark Mode */
+  --ai-panel-bg: rgba(15, 23, 42, 0.95);
+  --ai-panel-border: rgba(255, 255, 255, 0.1);
+  --ai-header-bg: rgba(15, 23, 42, 0.8);
+  --ai-text-color: #f1f5f9; /* Slate-100 */
+  --ai-subtext-color: #94a3b8; /* Slate-400 */
+  --ai-context-bg: rgba(59, 130, 246, 0.15);
+  --ai-context-border: #60a5fa;
+  --ai-input-bg: #1e293b; /* Slate-800 */
+  --ai-input-border: #334155;
+  --ai-input-text: #f8fafc;
+  --ai-input-placeholder: #64748b;
+  --ai-button-bg: #3b82f6;
+  --ai-button-text: #ffffff;
 }
 
-/* Additional branding styles for Physical AI & Humanoid Robotics textbook */
-.hero--primary {
-  background-color: var(--ifm-color-hero-background);
+/* ========================================= */
+/* 1. Global Polish & Typography             */
+/* ========================================= */
+
+.markdown {
+  max-width: 800px; /* Better line length for reading */
+  margin: 0 auto;
 }
 
-/* Fix homepage title color to white for proper visibility */
-.hero__title {
-  color: white !important;
+.markdown p {
+  line-height: 1.75;
+  margin-bottom: 1.5em;
+  font-size: 1.05rem;
 }
 
-/* Custom styles for code blocks and technical content */
-.code-block {
-  border-left: 4px solid var(--ifm-color-primary);
+.markdown h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 0.3em;
+  margin-top: 2.5em; /* Cleaner separation */
 }
 
-/* Custom card styles for learning modules */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.markdown h3 {
+  font-size: 1.5rem;
+  margin-top: 2em;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Custom styling for technical diagrams and illustrations */
-.textbook-figure {
+/* Centered Images */
+.markdown img {
+  display: block;
   margin: 2rem auto;
-  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+/* Code Block Polish */
+.code-block {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Navbar Polish */
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  backdrop-filter: blur(8px);
+  background-color: var(--ifm-navbar-background-color);
+}
+
+/* Sidebar Polish */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.menu__link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Homepage Title Contrast Fix */
+.hero__title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ========================================= */
+/* 2. Chatbot & AI Floating UI Styles        */
+/* ========================================= */
+
+/* Backdrop (Glassmorphism) */
+.ai-panel-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 9998;
+}
+
+/* Main Panel */
+.ai-right-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 400px;
+  max-width: 90vw;
+  background-color: var(--ai-panel-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--ai-panel-border);
+}
+
+/* Panel Header */
+.ai-panel-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--ai-panel-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--ai-header-bg);
+}
+
+.ai-panel-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ai-text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  color: var(--ai-subtext-color);
+  transition: background 0.2s, color 0.2s;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-close-button:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: var(--ai-text-color);
+}
+
+/* Panel Scroll Content */
+.ai-panel-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Context Box */
+.ai-context-box {
+  margin-bottom: 1.5rem;
   padding: 1rem;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--ai-context-bg);
+  border-left: 4px solid var(--ai-context-border);
 }
 
-.textbook-figure figcaption {
+.ai-context-label {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ai-context-border);
+  font-weight: 700;
+}
+
+.ai-context-text {
+  margin: 0;
   font-size: 0.9rem;
-  color: var(--ifm-color-content-secondary);
-  margin-top: 0.5rem;
+  line-height: 1.5;
+  color: var(--ai-text-color);
+  font-style: italic;
+  opacity: 0.9;
 }
 
-/* Enhanced table styling for technical specifications */
-.markdown table {
-  display: table;
+/* Helper Text */
+.ai-helper-text {
+  text-align: center;
+  color: var(--ai-subtext-color);
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+/* Input Area */
+.ai-input-area {
+  padding: 1.5rem;
+  border-top: 1px solid var(--ai-panel-border);
+  background-color: var(--ai-header-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ai-input-wrapper {
+  position: relative;
   width: 100%;
 }
 
-.markdown table th,
-.markdown table td {
-  padding: 0.75rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
+.ai-chat-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.75rem 1rem;
+  padding-bottom: 3rem; /* Space for button */
+  border-radius: 12px;
+  border: 1px solid var(--ai-input-border);
+  background-color: var(--ai-input-bg);
+  color: var(--ai-input-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  font-family: var(--ifm-font-family-base);
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.markdown table th {
-  background-color: rgba(26, 115, 232, 0.05);
-  font-weight: 600;
-}
-
-/* Custom styling for important concepts */
-.admonition.admonition-caution {
-  border-color: #ff6d01;
-}
-
-.admonition.admonition-note {
+.ai-chat-textarea:focus {
   border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.ai-chat-textarea::placeholder {
+  color: var(--ai-input-placeholder);
+}
+
+.ai-send-button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: var(--ai-button-bg);
+  color: var(--ai-button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s, box-shadow 0.1s, opacity 0.2s;
+}
+
+.ai-send-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ai-send-button:active {
+  transform: translateY(0);
+}
+
+/* ========================================= */
+/* 3. Floating Button Animation              */
+/* ========================================= */
+
+.ask-ai-button {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ask-ai-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.5);
 }
