@@ -6,31 +6,37 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2563eb; /* Professional lighter blue (Tailwind blue-600 equivalent) */
+  --ifm-color-primary: #2563eb;
+  /* Professional lighter blue (Tailwind blue-600 equivalent) */
   --ifm-color-primary-dark: #1d4ed8;
   --ifm-color-primary-darker: #1e40af;
   --ifm-color-primary-darkest: #1e3a8a;
   --ifm-color-primary-light: #3b82f6;
   --ifm-color-primary-lighter: #60a5fa;
   --ifm-color-primary-lightest: #93c5fd;
-  
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
-  --ifm-color-hero-background: #f8fafc; /* Slate-50 */
-  
+  --ifm-color-hero-background: #f8fafc;
+  /* Slate-50 */
+
   /* Text and Content */
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --ifm-line-height-base: 1.7; /* Improved readability */
+  --ifm-line-height-base: 1.7;
+  /* Improved readability */
   --ifm-heading-margin-top: 2em;
   --ifm-heading-margin-bottom: 1em;
-  
+
   /* AI Panel Variables - Light Mode */
   --ai-panel-bg: rgba(255, 255, 255, 0.9);
   --ai-panel-border: rgba(0, 0, 0, 0.1);
   --ai-header-bg: rgba(255, 255, 255, 0.8);
-  --ai-text-color: #1e293b; /* Slate-800 */
-  --ai-subtext-color: #64748b; /* Slate-500 */
-  --ai-context-bg: rgba(37, 99, 235, 0.05); /* slightly blue */
+  --ai-text-color: #1e293b;
+  /* Slate-800 */
+  --ai-subtext-color: #64748b;
+  /* Slate-500 */
+  --ai-context-bg: rgba(37, 99, 235, 0.05);
+  /* slightly blue */
   --ai-context-border: #2563eb;
   --ai-input-bg: #ffffff;
   --ai-input-border: #e2e8f0;
@@ -42,26 +48,31 @@
 
 /* Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #60a5fa; /* Blue-400 */
+  --ifm-color-primary: #60a5fa;
+  /* Blue-400 */
   --ifm-color-primary-dark: #3b82f6;
   --ifm-color-primary-darker: #2563eb;
   --ifm-color-primary-darkest: #1d4ed8;
   --ifm-color-primary-light: #93c5fd;
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
-  
+
   --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.2);
-  --ifm-color-hero-background: #0f172a; /* Slate-900 */
-  
+  --ifm-color-hero-background: #0f172a;
+  /* Slate-900 */
+
   /* AI Panel Variables - Dark Mode */
   --ai-panel-bg: rgba(15, 23, 42, 0.95);
   --ai-panel-border: rgba(255, 255, 255, 0.1);
   --ai-header-bg: rgba(15, 23, 42, 0.8);
-  --ai-text-color: #f1f5f9; /* Slate-100 */
-  --ai-subtext-color: #94a3b8; /* Slate-400 */
+  --ai-text-color: #f1f5f9;
+  /* Slate-100 */
+  --ai-subtext-color: #94a3b8;
+  /* Slate-400 */
   --ai-context-bg: rgba(59, 130, 246, 0.15);
   --ai-context-border: #60a5fa;
-  --ai-input-bg: #1e293b; /* Slate-800 */
+  --ai-input-bg: #1e293b;
+  /* Slate-800 */
   --ai-input-border: #334155;
   --ai-input-text: #f8fafc;
   --ai-input-placeholder: #64748b;
@@ -74,7 +85,8 @@
 /* ========================================= */
 
 .markdown {
-  max-width: 800px; /* Better line length for reading */
+  max-width: 800px;
+  /* Better line length for reading */
   margin: 0 auto;
 }
 
@@ -88,7 +100,8 @@
   font-size: 2rem;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
   padding-bottom: 0.3em;
-  margin-top: 2.5em; /* Cleaner separation */
+  margin-top: 2.5em;
+  /* Cleaner separation */
 }
 
 .markdown h3 {
@@ -101,7 +114,7 @@
   display: block;
   margin: 2rem auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 100%;
 }
 
@@ -109,7 +122,7 @@
 .code-block {
   border-radius: 8px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Navbar Polish */
@@ -132,7 +145,7 @@
 /* Homepage Title Contrast Fix */
 .hero__title {
   color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ========================================= */
@@ -206,7 +219,7 @@
 }
 
 .ai-close-button:hover {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   color: var(--ai-text-color);
 }
 
@@ -273,7 +286,8 @@
   width: 100%;
   min-height: 80px;
   padding: 0.75rem 1rem;
-  padding-bottom: 3rem; /* Space for button */
+  padding-bottom: 3rem;
+  /* Space for button */
   border-radius: 12px;
   border: 1px solid var(--ai-input-border);
   background-color: var(--ai-input-bg);
@@ -378,4 +392,70 @@
 [data-theme='dark'] .ai-chat-textarea::placeholder {
   color: var(--ai-input-placeholder);
   opacity: 1;
+}
+
+/* ========================================= */
+/* 5. AI Loading & Response Styles           */
+/* ========================================= */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ai-loading-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  color: var(--ai-subtext-color, #666);
+}
+
+.ai-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--ai-panel-border, #f3f3f3);
+  border-top: 2px solid var(--ifm-color-primary, #3498db);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.ai-response-area {
+  margin-top: 15px;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid var(--ai-input-border, #e0e0e0);
+  border-radius: 8px;
+  background-color: var(--ai-input-bg, #fafafa);
+}
+
+.ai-error-message {
+  color: #ef4444;
+  padding: 10px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 4px;
+}
+
+.ai-response-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: var(--ai-text-color, inherit);
+}
+
+.ai-placeholder-text {
+  color: var(--ai-subtext-color, #999);
+  font-style: italic;
+}
+
+/* Dark mode specific overrides for AI response */
+[data-theme='dark'] .ai-error-message {
+  color: #f87171;
+  background-color: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.4);
 }
