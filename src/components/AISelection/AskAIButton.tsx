@@ -55,7 +55,6 @@ const AskAIButton: React.FC = () => {
             width: '40px',
             height: '40px',
             borderRadius: '50%',
-            border: 'none',
             background: 'rgba(255, 255, 255, 0.25)',
             backdropFilter: 'blur(10px)',
             WebkitBackdropFilter: 'blur(10px)',

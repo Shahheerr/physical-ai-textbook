@@ -332,3 +332,50 @@
   transform: scale(1.1);
   box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.5);
 }
+
+/* ========================================= */
+/* 4. Dark Mode Complete Support             */
+/* ========================================= */
+
+/* Dark mode button in AI panel */
+[data-theme='dark'] .ai-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Disabled send button state */
+.ai-send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ai-send-button:disabled:hover {
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure AI button visible in dark mode */
+[data-theme='dark'] .ask-ai-button {
+  background: rgba(30, 41, 59, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .ask-ai-button:hover {
+  box-shadow: 0 10px 25px -5px rgba(96, 165, 250, 0.5);
+}
+
+/* Response text visibility in dark mode */
+[data-theme='dark'] .ai-response-area {
+  background-color: var(--ai-input-bg);
+  border-color: var(--ai-input-border);
+}
+
+/* Ensure textarea placeholder is visible */
+[data-theme='dark'] .ai-chat-textarea {
+  color: var(--ai-input-text);
+}
+
+[data-theme='dark'] .ai-chat-textarea::placeholder {
+  color: var(--ai-input-placeholder);
+  opacity: 1;
+}
